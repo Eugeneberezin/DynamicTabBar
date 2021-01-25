@@ -10,43 +10,13 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+   
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        setupRootViewController(features: [.yellow, .cyan, .blue])
-
+        let tabBarManager = TabBarManager(window: window!)
+        tabBarManager.setupRootViewController(features: [.yellow, .blue])
     }
-    func setupRootViewController(features: [Feature]) {
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = getViewControllers(from: features)
-        self.window?.rootViewController = tabBarController
-        self.window?.makeKeyAndVisible()
-      }
-
-      func getViewControllers(from features: [Feature]) -> [UIViewController] {
-        var tabItems = [TabItem]()
-        
-        for feature in features {
-          switch feature {
-            case .red:
-                tabItems.append(TabItem.red)
-            case .blue:
-                tabItems.append(TabItem.blue)
-
-            case .yellow:
-                tabItems.append(TabItem.yellow)
-
-            case .cyan:
-                tabItems.append(TabItem.cyan)
-
-          }
-        }
-        
-        let viewControllers = tabItems
-              .sorted { $0.order < $1.order }
-              .compactMap { $0.toViewController() }
-            return viewControllers
-      }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

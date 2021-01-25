@@ -19,9 +19,9 @@
 		B2C18E6425BF434C002E016A /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E6325BF434C002E016A /* BlueViewController.swift */; };
 		B2C18E6925BF437D002E016A /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E6825BF437D002E016A /* YellowViewController.swift */; };
 		B2C18E6E25BF43B0002E016A /* CayanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E6D25BF43B0002E016A /* CayanViewController.swift */; };
-		B2C18E7325BF4486002E016A /* BaseTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E7225BF4486002E016A /* BaseTabBar.swift */; };
 		B2C18E7825BF47DC002E016A /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E7725BF47DC002E016A /* Features.swift */; };
 		B2C18E7D25BF4CAF002E016A /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E7C25BF4CAF002E016A /* TabBarItem.swift */; };
+		B2C18E8825BF52A5002E016A /* TabBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E8725BF52A5002E016A /* TabBarManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +60,9 @@
 		B2C18E6325BF434C002E016A /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		B2C18E6825BF437D002E016A /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		B2C18E6D25BF43B0002E016A /* CayanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CayanViewController.swift; sourceTree = "<group>"; };
-		B2C18E7225BF4486002E016A /* BaseTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBar.swift; sourceTree = "<group>"; };
 		B2C18E7725BF47DC002E016A /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
 		B2C18E7C25BF4CAF002E016A /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		B2C18E8725BF52A5002E016A /* TabBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,20 +113,15 @@
 		B2C18E2A25BF3FF6002E016A /* TabBarPOC */ = {
 			isa = PBXGroup;
 			children = (
+				B2C18E8325BF5219002E016A /* Model */,
+				B2C18E8225BF51F7002E016A /* TabBar */,
+				B2C18E8125BF51CC002E016A /* ViewControllers */,
 				B2C18E2B25BF3FF6002E016A /* AppDelegate.swift */,
 				B2C18E2D25BF3FF6002E016A /* SceneDelegate.swift */,
-				B2C18E2F25BF3FF6002E016A /* ViewController.swift */,
 				B2C18E3125BF3FF6002E016A /* Main.storyboard */,
 				B2C18E3425BF3FF9002E016A /* Assets.xcassets */,
 				B2C18E3625BF3FF9002E016A /* LaunchScreen.storyboard */,
 				B2C18E3925BF3FF9002E016A /* Info.plist */,
-				B2C18E5E25BF431D002E016A /* RedViewController.swift */,
-				B2C18E6325BF434C002E016A /* BlueViewController.swift */,
-				B2C18E6825BF437D002E016A /* YellowViewController.swift */,
-				B2C18E6D25BF43B0002E016A /* CayanViewController.swift */,
-				B2C18E7225BF4486002E016A /* BaseTabBar.swift */,
-				B2C18E7725BF47DC002E016A /* Features.swift */,
-				B2C18E7C25BF4CAF002E016A /* TabBarItem.swift */,
 			);
 			path = TabBarPOC;
 			sourceTree = "<group>";
@@ -147,6 +142,35 @@
 				B2C18E4F25BF3FF9002E016A /* Info.plist */,
 			);
 			path = TabBarPOCUITests;
+			sourceTree = "<group>";
+		};
+		B2C18E8125BF51CC002E016A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2C18E2F25BF3FF6002E016A /* ViewController.swift */,
+				B2C18E5E25BF431D002E016A /* RedViewController.swift */,
+				B2C18E6325BF434C002E016A /* BlueViewController.swift */,
+				B2C18E6825BF437D002E016A /* YellowViewController.swift */,
+				B2C18E6D25BF43B0002E016A /* CayanViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2C18E8225BF51F7002E016A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B2C18E7C25BF4CAF002E016A /* TabBarItem.swift */,
+				B2C18E8725BF52A5002E016A /* TabBarManager.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B2C18E8325BF5219002E016A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2C18E7725BF47DC002E016A /* Features.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +306,8 @@
 				B2C18E7825BF47DC002E016A /* Features.swift in Sources */,
 				B2C18E5F25BF431D002E016A /* RedViewController.swift in Sources */,
 				B2C18E7D25BF4CAF002E016A /* TabBarItem.swift in Sources */,
+				B2C18E8825BF52A5002E016A /* TabBarManager.swift in Sources */,
 				B2C18E6E25BF43B0002E016A /* CayanViewController.swift in Sources */,
-				B2C18E7325BF4486002E016A /* BaseTabBar.swift in Sources */,
 				B2C18E3025BF3FF6002E016A /* ViewController.swift in Sources */,
 				B2C18E2C25BF3FF6002E016A /* AppDelegate.swift in Sources */,
 				B2C18E6425BF434C002E016A /* BlueViewController.swift in Sources */,
