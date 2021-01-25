@@ -13,38 +13,47 @@ struct TabItem {
   let image: String
   let selectedImage: String
   let order: Int
+  let title: String
 
     static let red = TabItem(
     storyboardName: "Main",
     controllerName: "red",
     image: "star.fill",
     selectedImage: "star.fill",
-    order: 3
+    order: 3,
+    title: "Red"
   )
   static let blue = TabItem(
     storyboardName: "Main",
     controllerName: "blue",
     image: "flag.fill",
     selectedImage: "flag.fill",
-    order: 0)
+    order: 0,
+    title: "Blue"
+    
+  )
     
   static let yellow = TabItem(
     storyboardName: "Main",
     controllerName: "yellow",
     image: "cart.badge.plus",
     selectedImage: "cart.badge.plus",
-    order: 1)
+    order: 1,
+    title: "Yellow"
+  )
     
   static let cyan = TabItem(
     storyboardName: "Main",
     controllerName: "cyan",
     image: "leaf.fill",
     selectedImage: "leaf.fill",
-    order: 2)
+    order: 2,
+    title: "Cyan"
+  )
     
     func toViewController() -> UIViewController {
         let tabBarItem = UITabBarItem(
-          title: nil,
+          title: title,
           image: UIImage(systemName: image),
           selectedImage: UIImage(systemName: selectedImage)
         )

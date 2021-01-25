@@ -24,6 +24,7 @@ depends-top-level:
 - !private "order"
 - !private "selectedImage"
 - !private "storyboardName"
+- !private "title"
 depends-member:
 - !private ["SK", ""]
 - !private ["So8NSBundleC", "init"]
@@ -121,6 +122,7 @@ depends-member:
 - ["9TabBarPOC0A4ItemV", "red"]
 - ["9TabBarPOC0A4ItemV", "selectedImage"]
 - ["9TabBarPOC0A4ItemV", "storyboardName"]
+- ["9TabBarPOC0A4ItemV", "title"]
 - ["9TabBarPOC0A4ItemV", "toViewController"]
 - ["9TabBarPOC0A4ItemV", "yellow"]
 - !private ["s16TextOutputStreamP", ""]
@@ -248,4 +250,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "73f6117d17450b267e424aecb6ed2483"
+interface-hash: "dc4a4ebb515038e0a223b4fb78755ebe"
