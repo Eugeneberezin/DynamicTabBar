@@ -30,7 +30,6 @@ depends-member:
 - !private ["SK", "compactMap"]
 - !private ["SK", "init"]
 - !private ["SK", "sorted"]
-- !private ["9TabBarPOC18BlueViewControllerC", ""]
 - !private ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
@@ -42,7 +41,6 @@ depends-member:
 - !private ["s7CVarArgP", "rootViewController"]
 - !private ["s7CVarArgP", "sorted"]
 - !private ["s7CVarArgP", "viewControllers"]
-- !private ["9TabBarPOC19CayanViewControllerC", ""]
 - ["Sl", ""]
 - !private ["Sl", "append"]
 - !private ["Sl", "compactMap"]
@@ -168,7 +166,6 @@ depends-member:
 - ["SY", "cyan"]
 - ["SY", "red"]
 - ["SY", "yellow"]
-- !private ["9TabBarPOC17RedViewControllerC", ""]
 - !private ["ST", "Element"]
 - !private ["ST", "Iterator"]
 - ["ST", ""]
@@ -271,7 +268,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "viewControllers"]
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
-- !private ["9TabBarPOC20YellowViewControllerC", ""]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "compactMap"]
 - !private ["s14_ArrayProtocolP", "init"]
@@ -310,10 +306,8 @@ depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "Sa"
 - "SK"
-- !private "9TabBarPOC18BlueViewControllerC"
 - !private "So15CALayerDelegateP"
 - !private "s7CVarArgP"
-- !private "9TabBarPOC19CayanViewControllerC"
 - "Sl"
 - "SL"
 - !private "10Foundation15ContiguousBytesP"
@@ -345,7 +339,6 @@ depends-nominal:
 - !private "Sk"
 - !private "Sm"
 - "SY"
-- !private "9TabBarPOC17RedViewControllerC"
 - "ST"
 - !private "s13SignedNumericP"
 - !private "Sx"
@@ -374,7 +367,6 @@ depends-nominal:
 - "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "So8UIWindowC"
-- !private "9TabBarPOC20YellowViewControllerC"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"

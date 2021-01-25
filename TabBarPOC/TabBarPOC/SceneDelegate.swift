@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let tabBarManager = TabBarManager(window: window!)
-        tabBarManager.setupRootViewController(features: [.yellow, .blue])
+        tabBarManager.setupRootViewController(features: [.yellow, .blue, .cyan, .red])
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

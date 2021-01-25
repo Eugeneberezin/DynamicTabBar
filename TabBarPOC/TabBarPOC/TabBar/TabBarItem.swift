@@ -8,31 +8,36 @@
 import UIKit
 
 struct TabItem {
-  let viewController: UIViewController
+  let storyboardName: String
+  let controllerName: String
   let image: String
   let selectedImage: String
   let order: Int
 
-  static let red = TabItem(
-    viewController: RedViewController(),
+    static let red = TabItem(
+    storyboardName: "Main",
+    controllerName: "red",
     image: "star.fill",
     selectedImage: "star.fill",
     order: 3
   )
   static let blue = TabItem(
-    viewController: BlueViewController(),
+    storyboardName: "Main",
+    controllerName: "blue",
     image: "flag.fill",
     selectedImage: "flag.fill",
     order: 0)
     
   static let yellow = TabItem(
-    viewController: YellowViewController(),
+    storyboardName: "Main",
+    controllerName: "yellow",
     image: "cart.badge.plus",
     selectedImage: "cart.badge.plus",
     order: 1)
     
   static let cyan = TabItem(
-    viewController: CayanViewController(),
+    storyboardName: "Main",
+    controllerName: "cyan",
     image: "leaf.fill",
     selectedImage: "leaf.fill",
     order: 2)
@@ -45,7 +50,8 @@ struct TabItem {
         )
         tabBarItem.tag = order
 
-        let viewController = self.viewController
+        let viewController = UIStoryboard(name: storyboardName, bundle: Bundle(path: "TabBarPOC"))
+            .instantiateViewController(withIdentifier: controllerName)
         viewController.tabBarItem = tabBarItem
         return viewController
       }
