@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "60B5439F8FB0F7D89F6EBC67A55B8633ECB39CE4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "60B5439F8FB0F7D89F6EBC67A55B8633ECB39CE4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "70D129A6-4D77-4489-B8C9-F4F024DE827D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "60B5439F8FB0F7D89F6EBC67A55B8633ECB39CE4" : "DynamicTabBar\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TabBarPOC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TabBarPOC\/TabBarPOC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Eugeneberezin\/DynamicTabBar.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "60B5439F8FB0F7D89F6EBC67A55B8633ECB39CE4"
+    }
+  ]
+}
