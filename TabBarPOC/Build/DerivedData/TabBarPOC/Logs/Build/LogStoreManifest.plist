@@ -856,6 +856,40 @@
 			<key>uniqueIdentifier</key>
 			<string>CF60FBD5-78E8-4574-BD5A-C66E6AC6671C</string>
 		</dict>
+		<key>D5A80627-5133-4A89-8744-1610C8A8412B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D5A80627-5133-4A89-8744-1610C8A8412B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TabBarPOC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TabBarPOC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build TabBarPOC</string>
+			<key>timeStartedRecording</key>
+			<real>633395511.13419604</real>
+			<key>timeStoppedRecording</key>
+			<real>633395511.31645703</real>
+			<key>title</key>
+			<string>Build TabBarPOC</string>
+			<key>uniqueIdentifier</key>
+			<string>D5A80627-5133-4A89-8744-1610C8A8412B</string>
+		</dict>
 		<key>D9E6A8F9-DD49-487F-AD74-0FE72C361D05</key>
 		<dict>
 			<key>className</key>
