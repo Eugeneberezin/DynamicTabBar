@@ -226,8 +226,8 @@ depends-member:
 - ["9TabBarPOC0aB7ManagerC", "UIViewController"]
 - ["9TabBarPOC0aB7ManagerC", "UIWindow"]
 - ["9TabBarPOC0aB7ManagerC", "deinit"]
-- !private ["9TabBarPOC0aB7ManagerC", "getViewControllers"]
-- !private ["9TabBarPOC0aB7ManagerC", "getViewControllersFromJSON"]
+- ["9TabBarPOC0aB7ManagerC", "getViewControllers"]
+- ["9TabBarPOC0aB7ManagerC", "getViewControllersFromJSON"]
 - ["9TabBarPOC0aB7ManagerC", "init"]
 - ["9TabBarPOC0aB7ManagerC", "setupRootViewController"]
 - ["9TabBarPOC0aB7ManagerC", "setupRootViewControllerFromJSON"]
@@ -464,4 +464,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ea65e5b9efaf8cd17e0874dde2c1df92"
+interface-hash: "9ccf897cd1206b16cc4b7b4e0d44787a"

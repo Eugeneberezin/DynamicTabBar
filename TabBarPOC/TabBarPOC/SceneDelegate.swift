@@ -14,7 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let tabBarManager = TabBarManager(window: window!)
-        tabBarManager.setupRootViewControllerFromJSON()
+        let tabbarController = TabBarViewController()
+        self.window?.rootViewController = tabbarController
+        self.window?.makeKeyAndVisible()
+//        tabBarManager.setupRootViewControllerFromJSON()
 //        tabBarManager.setupRootViewController(features: [.yellow, .red, .cyan])
     }
     

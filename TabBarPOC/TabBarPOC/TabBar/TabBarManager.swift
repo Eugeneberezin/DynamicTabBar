@@ -16,6 +16,8 @@ class TabBarManager {
         self.window = window
     }
     
+    init() {}
+    
     func setupRootViewControllerFromJSON() {
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = getViewControllersFromJSON()
@@ -30,7 +32,7 @@ class TabBarManager {
         self.window?.makeKeyAndVisible()
       }
     
-    private func getViewControllersFromJSON() -> [UIViewController] {
+     func getViewControllersFromJSON() -> [UIViewController] {
         tabItems = Bundle.main.decode(type: [TabItem].self, from: "TabBar.json")
         let viewControllers = tabItems
               .sorted { $0.order < $1.order }
@@ -38,7 +40,7 @@ class TabBarManager {
             return viewControllers
     }
 
-      private func getViewControllers(from features: [Feature]) -> [UIViewController] {
+       func getViewControllers(from features: [Feature]) -> [UIViewController] {
        
         for feature in features {
           switch feature {

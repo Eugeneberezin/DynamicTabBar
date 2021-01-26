@@ -262,6 +262,14 @@ SWIFT_CLASS("_TtC9TabBarPOC13SceneDelegate")
 @end
 
 
+SWIFT_CLASS("_TtC9TabBarPOC20TabBarViewController")
+@interface TabBarViewController : UITabBarController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9TabBarPOC14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
