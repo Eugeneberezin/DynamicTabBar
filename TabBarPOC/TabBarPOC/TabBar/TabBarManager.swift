@@ -9,9 +9,18 @@ import UIKit
 
 class TabBarManager {
     var window: UIWindow?
+    var tabItems = [TabItem]()
+    
    
     init(window: UIWindow) {
         self.window = window
+    }
+    
+    func setupRootViewControllerFromJSON() {
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = getViewControllersFromJSON()
+        self.window?.rootViewController = tabBarController
+        self.window?.makeKeyAndVisible()
     }
     
     func setupRootViewController(features: [Feature]) {
@@ -20,22 +29,29 @@ class TabBarManager {
         self.window?.rootViewController = tabBarController
         self.window?.makeKeyAndVisible()
       }
+    
+    private func getViewControllersFromJSON() -> [UIViewController] {
+        tabItems = Bundle.main.decode(type: [TabItem].self, from: "TabBar.json")
+        let viewControllers = tabItems
+              .sorted { $0.order < $1.order }
+              .compactMap { $0.toViewController() }
+            return viewControllers
+    }
 
       private func getViewControllers(from features: [Feature]) -> [UIViewController] {
-        var tabItems = [TabItem]()
-        
+       
         for feature in features {
           switch feature {
             case .red:
-                tabItems.append(TabItem.red)
+                self.tabItems.append(TabItem.red)
             case .blue:
-                tabItems.append(TabItem.blue)
+                self.tabItems.append(TabItem.blue)
 
             case .yellow:
-                tabItems.append(TabItem.yellow)
+                self.tabItems.append(TabItem.yellow)
 
             case .cyan:
-                tabItems.append(TabItem.cyan)
+                self.tabItems.append(TabItem.cyan)
           }
         }
         

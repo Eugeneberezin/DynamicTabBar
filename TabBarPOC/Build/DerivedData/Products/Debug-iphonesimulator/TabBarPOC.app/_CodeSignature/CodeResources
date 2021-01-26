@@ -68,6 +68,10 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>TabBar.json</key>
+		<data>
+		IRpPmjur94iXLRSfDJ5jjwbjdZE=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -167,6 +171,13 @@
 			<key>hash2</key>
 			<data>
 			2mePEOLFoA0meyu/CCfBq95cm4GbfghdCr8igdjgMsM=
+			</data>
+		</dict>
+		<key>TabBar.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l3K+9Ffg09e2h8vd7bv0f4+IHYS+E5EIC9MLydizfLg=
 			</data>
 		</dict>
 	</dict>

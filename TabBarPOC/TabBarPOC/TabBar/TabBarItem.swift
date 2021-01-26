@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct TabItem {
+struct TabItem: Codable {
     let storyboardName: String
     let controllerName: String
     let image: String

@@ -7,98 +7,133 @@ provides-member:
 - ["9TabBarPOC0aB7ManagerC", ""]
 provides-dynamic-lookup:
 - "getViewControllers"
+- "getViewControllersFromJSON"
 - "setupRootViewController"
+- "setupRootViewControllerFromJSON"
+- "tabItems"
 - "window"
 depends-top-level:
 - "<"
 - "AssignmentPrecedence"
+- !private "Bundle"
 - "Feature"
+- !private "StringLiteralType"
 - "TabBarManager"
-- !private "TabItem"
+- "TabItem"
 - !private "UITabBarController"
 - "UIViewController"
 - "UIWindow"
 - !private "getViewControllers"
+- !private "getViewControllersFromJSON"
+- !private "tabItems"
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
 - !private ["Sa", "append"]
 - !private ["Sa", "compactMap"]
-- !private ["Sa", "init"]
+- ["Sa", "init"]
 - !private ["Sa", "sorted"]
 - ["SK", ""]
 - !private ["SK", "append"]
 - !private ["SK", "compactMap"]
-- !private ["SK", "init"]
+- ["SK", "init"]
 - !private ["SK", "sorted"]
+- !private ["So8NSBundleC", "decode"]
+- !private ["So8NSBundleC", "main"]
 - !private ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - !private ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "compactMap"]
-- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "decode"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "makeKeyAndVisible"]
 - !private ["s7CVarArgP", "rootViewController"]
 - !private ["s7CVarArgP", "sorted"]
 - !private ["s7CVarArgP", "viewControllers"]
+- !private ["s9CodingKeyP", ""]
+- !private ["s9CodingKeyP", "init"]
+- !private ["s9CodingKeyP", "intValue"]
+- !private ["s9CodingKeyP", "stringValue"]
 - ["Sl", ""]
 - !private ["Sl", "append"]
 - !private ["Sl", "compactMap"]
-- !private ["Sl", "init"]
+- ["Sl", "init"]
 - !private ["Sl", "sorted"]
 - ["SL", ""]
 - !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "compactMap"]
-- !private ["10Foundation15ContiguousBytesP", "init"]
+- ["10Foundation15ContiguousBytesP", "init"]
 - !private ["10Foundation15ContiguousBytesP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "compactMap"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "decode"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "sorted"]
 - !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "compactMap"]
-- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "sorted"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "compactMap"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "decode"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
 - !private ["s23CustomStringConvertibleP", "sorted"]
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
-- !private ["10Foundation12DataProtocolP", ""]
+- ["10Foundation12DataProtocolP", ""]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "compactMap"]
-- !private ["10Foundation12DataProtocolP", "init"]
+- ["10Foundation12DataProtocolP", "init"]
 - !private ["10Foundation12DataProtocolP", "sorted"]
 - !private ["Se", "append"]
+- !private ["Se", "blue"]
 - !private ["Se", "compactMap"]
-- !private ["Se", "init"]
+- !private ["Se", "cyan"]
+- ["Se", "init"]
+- !private ["Se", "order"]
+- !private ["Se", "red"]
 - !private ["Se", "sorted"]
+- !private ["Se", "toViewController"]
+- !private ["Se", "yellow"]
 - !private ["SE", "append"]
+- !private ["SE", "blue"]
 - !private ["SE", "compactMap"]
-- !private ["SE", "init"]
+- !private ["SE", "cyan"]
+- ["SE", "init"]
+- !private ["SE", "order"]
+- !private ["SE", "red"]
 - !private ["SE", "sorted"]
+- !private ["SE", "toViewController"]
+- !private ["SE", "yellow"]
+- !private ["SQ", "=="]
 - ["SQ", ""]
 - !private ["SQ", "append"]
 - ["SQ", "blue"]
 - !private ["SQ", "compactMap"]
 - ["SQ", "cyan"]
-- !private ["SQ", "init"]
+- !private ["SQ", "decode"]
+- ["SQ", "init"]
+- !private ["SQ", "main"]
 - !private ["SQ", "makeKeyAndVisible"]
 - ["SQ", "red"]
 - !private ["SQ", "rootViewController"]
 - !private ["SQ", "sorted"]
 - !private ["SQ", "viewControllers"]
 - ["SQ", "yellow"]
-- !private ["s25ExpressibleByArrayLiteralP", ""]
+- ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
-- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "sorted"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s25ExpressibleByFloatLiteralP", ""]
@@ -116,7 +151,11 @@ depends-member:
 - ["SH", "blue"]
 - !private ["SH", "compactMap"]
 - ["SH", "cyan"]
-- !private ["SH", "init"]
+- !private ["SH", "decode"]
+- !private ["SH", "hash"]
+- !private ["SH", "hashValue"]
+- ["SH", "init"]
+- !private ["SH", "main"]
 - !private ["SH", "makeKeyAndVisible"]
 - ["SH", "red"]
 - !private ["SH", "rootViewController"]
@@ -124,14 +163,14 @@ depends-member:
 - !private ["SH", "viewControllers"]
 - ["SH", "yellow"]
 - ["s25LosslessStringConvertibleP", ""]
-- !private ["SM", ""]
+- ["SM", ""]
 - !private ["SM", "append"]
 - !private ["SM", "compactMap"]
-- !private ["SM", "init"]
+- ["SM", "init"]
 - !private ["SM", "sorted"]
 - !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "compactMap"]
-- !private ["10Foundation19MutableDataProtocolP", "init"]
+- ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "sorted"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "init"]
@@ -142,25 +181,29 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
 - ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "decode"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "makeKeyAndVisible"]
 - !private ["So8NSObjectC", "rootViewController"]
 - !private ["So8NSObjectC", "viewControllers"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "decode"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "makeKeyAndVisible"]
 - !private ["So8NSObjectP", "rootViewController"]
 - !private ["So8NSObjectP", "viewControllers"]
 - !private ["Sj", ""]
-- !private ["Sk", ""]
+- ["Sk", ""]
 - !private ["Sk", "append"]
 - !private ["Sk", "compactMap"]
-- !private ["Sk", "init"]
+- ["Sk", "init"]
 - !private ["Sk", "sorted"]
-- !private ["Sm", ""]
+- ["Sm", ""]
 - !private ["Sm", "append"]
 - !private ["Sm", "compactMap"]
-- !private ["Sm", "init"]
+- ["Sm", "init"]
 - !private ["Sm", "sorted"]
 - ["SY", "blue"]
 - ["SY", "cyan"]
@@ -171,21 +214,27 @@ depends-member:
 - ["ST", ""]
 - !private ["ST", "append"]
 - !private ["ST", "compactMap"]
-- !private ["ST", "init"]
+- ["ST", "init"]
 - !private ["ST", "makeIterator"]
 - !private ["ST", "sorted"]
 - !private ["s13SignedNumericP", ""]
 - !private ["Sx", ""]
+- !private ["9TabBarPOC0aB7ManagerC", "Bundle"]
 - ["9TabBarPOC0aB7ManagerC", "Feature"]
-- !private ["9TabBarPOC0aB7ManagerC", "TabItem"]
+- ["9TabBarPOC0aB7ManagerC", "TabItem"]
 - !private ["9TabBarPOC0aB7ManagerC", "UITabBarController"]
 - ["9TabBarPOC0aB7ManagerC", "UIViewController"]
 - ["9TabBarPOC0aB7ManagerC", "UIWindow"]
 - ["9TabBarPOC0aB7ManagerC", "deinit"]
 - !private ["9TabBarPOC0aB7ManagerC", "getViewControllers"]
+- !private ["9TabBarPOC0aB7ManagerC", "getViewControllersFromJSON"]
 - ["9TabBarPOC0aB7ManagerC", "init"]
 - ["9TabBarPOC0aB7ManagerC", "setupRootViewController"]
+- ["9TabBarPOC0aB7ManagerC", "setupRootViewControllerFromJSON"]
+- ["9TabBarPOC0aB7ManagerC", "tabItems"]
 - ["9TabBarPOC0aB7ManagerC", "window"]
+- !private ["9TabBarPOC0A4ItemV", "CodingKeys"]
+- ["9TabBarPOC0A4ItemV", ""]
 - !private ["9TabBarPOC0A4ItemV", "blue"]
 - !private ["9TabBarPOC0A4ItemV", "cyan"]
 - !private ["9TabBarPOC0A4ItemV", "order"]
@@ -270,11 +319,11 @@ depends-member:
 - !private ["So8UIWindowC", "rootViewController"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "compactMap"]
-- !private ["s14_ArrayProtocolP", "init"]
+- ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "sorted"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "compactMap"]
-- !private ["s24_DestructorSafeContainerP", "init"]
+- ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "sorted"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
@@ -282,43 +331,49 @@ depends-member:
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "compactMap"]
-- !private ["s19_HasContiguousBytesP", "init"]
+- ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "sorted"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "sorted"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "decode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "decode"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeKeyAndVisible"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rootViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewControllers"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "compactMap"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "sorted"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "makeKeyAndVisible"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
-- !private "Sa"
+- "Sa"
 - "SK"
+- !private "So8NSBundleC"
 - !private "So15CALayerDelegateP"
-- !private "s7CVarArgP"
+- "s7CVarArgP"
+- !private "s9CodingKeyP"
 - "Sl"
 - "SL"
-- !private "10Foundation15ContiguousBytesP"
-- !private "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "10Foundation12DataProtocolP"
-- !private "Se"
-- !private "SE"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "SE"
 - "SQ"
-- !private "s25ExpressibleByArrayLiteralP"
+- "s25ExpressibleByArrayLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
@@ -329,21 +384,21 @@ depends-nominal:
 - !private "SF"
 - "SH"
 - "s25LosslessStringConvertibleP"
-- !private "SM"
-- !private "10Foundation19MutableDataProtocolP"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sj"
-- !private "Sk"
-- !private "Sm"
+- "Sk"
+- "Sm"
 - "SY"
 - "ST"
 - !private "s13SignedNumericP"
 - !private "Sx"
 - "9TabBarPOC0aB7ManagerC"
-- !private "9TabBarPOC0A4ItemV"
+- "9TabBarPOC0A4ItemV"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
@@ -367,17 +422,17 @@ depends-nominal:
 - "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "So8UIWindowC"
-- !private "s14_ArrayProtocolP"
-- !private "s24_DestructorSafeContainerP"
+- "s14_ArrayProtocolP"
+- "s24_DestructorSafeContainerP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s19_HasContiguousBytesP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -409,4 +464,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "528e4bd2831a67eb50d9003a3daad7c4"
+interface-hash: "ea65e5b9efaf8cd17e0874dde2c1df92"

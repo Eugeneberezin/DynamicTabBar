@@ -22,6 +22,8 @@
 		B2C18E7825BF47DC002E016A /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E7725BF47DC002E016A /* Features.swift */; };
 		B2C18E7D25BF4CAF002E016A /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E7C25BF4CAF002E016A /* TabBarItem.swift */; };
 		B2C18E8825BF52A5002E016A /* TabBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C18E8725BF52A5002E016A /* TabBarManager.swift */; };
+		B2F259B925C0B4A300D1393E /* TabBar.json in Resources */ = {isa = PBXBuildFile; fileRef = B2F259B825C0B4A300D1393E /* TabBar.json */; };
+		B2F259C625C0B7EB00D1393E /* Bundle+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F259C525C0B7EB00D1393E /* Bundle+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		B2C18E7725BF47DC002E016A /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
 		B2C18E7C25BF4CAF002E016A /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		B2C18E8725BF52A5002E016A /* TabBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarManager.swift; sourceTree = "<group>"; };
+		B2F259B825C0B4A300D1393E /* TabBar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TabBar.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		B2F259C525C0B7EB00D1393E /* Bundle+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		B2C18E1F25BF3FF6002E016A = {
 			isa = PBXGroup;
 			children = (
+				B2F259C425C0B7C800D1393E /* Extensions */,
+				B2F259C325C0B7AF00D1393E /* MockData */,
 				B2C18E2A25BF3FF6002E016A /* TabBarPOC */,
 				B2C18E4125BF3FF9002E016A /* TabBarPOCTests */,
 				B2C18E4C25BF3FF9002E016A /* TabBarPOCUITests */,
@@ -171,6 +177,22 @@
 				B2C18E7725BF47DC002E016A /* Features.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B2F259C325C0B7AF00D1393E /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				B2F259B825C0B4A300D1393E /* TabBar.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		B2F259C425C0B7C800D1393E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2F259C525C0B7EB00D1393E /* Bundle+extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +301,7 @@
 				B2C18E3825BF3FF9002E016A /* LaunchScreen.storyboard in Resources */,
 				B2C18E3525BF3FF9002E016A /* Assets.xcassets in Resources */,
 				B2C18E3325BF3FF6002E016A /* Main.storyboard in Resources */,
+				B2F259B925C0B4A300D1393E /* TabBar.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +329,7 @@
 				B2C18E7825BF47DC002E016A /* Features.swift in Sources */,
 				B2C18E5F25BF431D002E016A /* RedViewController.swift in Sources */,
 				B2C18E7D25BF4CAF002E016A /* TabBarItem.swift in Sources */,
+				B2F259C625C0B7EB00D1393E /* Bundle+extensions.swift in Sources */,
 				B2C18E8825BF52A5002E016A /* TabBarManager.swift in Sources */,
 				B2C18E6E25BF43B0002E016A /* CayanViewController.swift in Sources */,
 				B2C18E3025BF3FF6002E016A /* ViewController.swift in Sources */,

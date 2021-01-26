@@ -1,14 +1,15 @@
 version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
 options: "c4ff8cc867eac3a11f0c9567ea80a1b8"
-build_time: [1611607100, 174914000]
+build_time: [1611696124, 720929000]
 inputs:
-  "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/Model/Features.swift": [1611600630, 78817215]
+  "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/Model/Features.swift": [1611671693, 59821167]
   "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/ViewControllers/RedViewController.swift": [1611598943, 242843617]
-  "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/TabBar/TabBarItem.swift": [1611607100, 73759827]
-  "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/TabBar/TabBarManager.swift": [1611603284, 725607037]
+  "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/TabBar/TabBarItem.swift": [1611690619, 210324192]
+  "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/Extensions/Bundle+extensions.swift": [1611694825, 764061160]
+  "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/TabBar/TabBarManager.swift": [1611695283, 185640524]
   "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/ViewControllers/CayanViewController.swift": [1611599111, 140018469]
   "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/ViewControllers/ViewController.swift": [1611597942, 840477181]
   "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/AppDelegate.swift": [1611597942, 827499050]
   "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/ViewControllers/BlueViewController.swift": [1611598846, 261280342]
   "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/ViewControllers/YellowViewController.swift": [1611598897, 434896773]
-  "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/SceneDelegate.swift": [1611604499, 579245273]
+  "/Users/g3g9/Desktop/Dev/iOS util/DynamicTabBar/TabBarPOC/TabBarPOC/SceneDelegate.swift": [1611696124, 638061771]
