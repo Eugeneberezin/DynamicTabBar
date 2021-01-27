@@ -36,7 +36,7 @@ class TabBarManager {
         tabItems = Bundle.main.decode(type: [TabItem].self, from: "TabBar.json")
         let viewControllers = tabItems
               .sorted { $0.order < $1.order }
-              .compactMap { $0.toViewController() }
+              .compactMap { toViewController(for: $0)}
             return viewControllers
     }
 
@@ -59,9 +59,23 @@ class TabBarManager {
         
         let viewControllers = tabItems
               .sorted { $0.order < $1.order }
-              .compactMap { $0.toViewController() }
+              .compactMap { toViewController(for: $0) }
             return viewControllers
       }
+    
+    func toViewController(for item: TabItem) -> UIViewController {
+        let tabBarItem = UITabBarItem(
+            title: item.title,
+            image: UIImage(systemName: item.image),
+            selectedImage: UIImage(systemName: item.selectedImage)
+        )
+        tabBarItem.tag = item.order
+        
+        let viewController = UIStoryboard(name: item.storyboardName, bundle: Bundle(path: "TabBarPOC"))
+            .instantiateViewController(withIdentifier: item.controllerName)
+        viewController.tabBarItem = tabBarItem
+        return viewController
+    }
 
     
 }

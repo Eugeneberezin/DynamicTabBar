@@ -51,17 +51,4 @@ struct TabItem: Codable {
         title: "Cyan"
     )
     
-    func toViewController() -> UIViewController {
-        let tabBarItem = UITabBarItem(
-            title: title,
-            image: UIImage(systemName: image),
-            selectedImage: UIImage(systemName: selectedImage)
-        )
-        tabBarItem.tag = order
-        
-        let viewController = UIStoryboard(name: storyboardName, bundle: Bundle(path: "TabBarPOC"))
-            .instantiateViewController(withIdentifier: controllerName)
-        viewController.tabBarItem = tabBarItem
-        return viewController
-    }
 }

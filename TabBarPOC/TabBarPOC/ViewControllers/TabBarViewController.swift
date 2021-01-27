@@ -13,8 +13,8 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewControllers = tabBarManager.getViewControllersFromJSON()
-//        viewControllers = tabBarManager.getViewControllers(from: [.red, .yellow, .cyan])
+//        viewControllers = tabBarManager.getViewControllersFromJSON()
+        viewControllers = tabBarManager.getViewControllers(from: [.red, .yellow, .cyan])
     }
     
 }

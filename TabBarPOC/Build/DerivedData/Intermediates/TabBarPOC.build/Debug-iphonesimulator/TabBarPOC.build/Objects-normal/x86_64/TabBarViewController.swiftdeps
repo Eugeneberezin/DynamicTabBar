@@ -10,6 +10,7 @@ provides-dynamic-lookup:
 - "tabItems"
 - "viewDidLoad"
 depends-top-level:
+- !private "Array"
 - "AssignmentPrecedence"
 - "TabBarManager"
 - "TabBarViewController"
@@ -54,23 +55,32 @@ depends-member:
 - ["SQ", "TabBarManager"]
 - ["SQ", "TabItem"]
 - ["SQ", ""]
+- !private ["SQ", "cyan"]
 - ["SQ", "init"]
+- !private ["SQ", "red"]
 - !private ["SQ", "tabBarManager"]
 - !private ["SQ", "viewControllers"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "yellow"]
 - ["s25ExpressibleByArrayLiteralP", ""]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - ["s32ExpressibleByStringInterpolationP", ""]
 - ["s26ExpressibleByStringLiteralP", ""]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["9TabBarPOC7FeatureO", "cyan"]
+- !private ["9TabBarPOC7FeatureO", "red"]
+- !private ["9TabBarPOC7FeatureO", "yellow"]
 - ["SH", "TabBarManager"]
 - ["SH", "TabItem"]
 - ["SH", ""]
+- !private ["SH", "cyan"]
 - ["SH", "init"]
+- !private ["SH", "red"]
 - !private ["SH", "tabBarManager"]
 - !private ["SH", "viewControllers"]
 - !private ["SH", "viewDidLoad"]
+- !private ["SH", "yellow"]
 - ["s25LosslessStringConvertibleP", ""]
 - ["SM", ""]
 - ["SM", "init"]
@@ -111,9 +121,12 @@ depends-member:
 - ["Sk", "init"]
 - ["Sm", ""]
 - ["Sm", "init"]
+- !private ["SY", "cyan"]
+- !private ["SY", "red"]
+- !private ["SY", "yellow"]
 - ["ST", ""]
 - ["ST", "init"]
-- !private ["9TabBarPOC0aB7ManagerC", "getViewControllersFromJSON"]
+- !private ["9TabBarPOC0aB7ManagerC", "getViewControllers"]
 - ["9TabBarPOC0aB7ManagerC", "init"]
 - ["9TabBarPOC0aB14ViewControllerC", "TabBarManager"]
 - ["9TabBarPOC0aB14ViewControllerC", "TabItem"]
@@ -261,6 +274,7 @@ depends-nominal:
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "9TabBarPOC7FeatureO"
 - "SH"
 - "s25LosslessStringConvertibleP"
 - "SM"
@@ -271,6 +285,7 @@ depends-nominal:
 - "So8NSObjectP"
 - "Sk"
 - "Sm"
+- !private "SY"
 - "ST"
 - "9TabBarPOC0aB7ManagerC"
 - "9TabBarPOC0aB14ViewControllerC"

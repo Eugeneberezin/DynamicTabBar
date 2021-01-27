@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 - "setupRootViewController"
 - "setupRootViewControllerFromJSON"
 - "tabItems"
+- "toViewController"
 - "window"
 depends-top-level:
 - "<"
@@ -20,12 +21,16 @@ depends-top-level:
 - !private "StringLiteralType"
 - "TabBarManager"
 - "TabItem"
+- !private "UIImage"
+- !private "UIStoryboard"
 - !private "UITabBarController"
+- !private "UITabBarItem"
 - "UIViewController"
 - "UIWindow"
 - !private "getViewControllers"
 - !private "getViewControllersFromJSON"
 - !private "tabItems"
+- "toViewController"
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
 - !private ["Sa", "append"]
@@ -38,6 +43,7 @@ depends-member:
 - ["SK", "init"]
 - !private ["SK", "sorted"]
 - !private ["So8NSBundleC", "decode"]
+- !private ["So8NSBundleC", "init"]
 - !private ["So8NSBundleC", "main"]
 - !private ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
@@ -47,10 +53,13 @@ depends-member:
 - !private ["s7CVarArgP", "compactMap"]
 - !private ["s7CVarArgP", "decode"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "makeKeyAndVisible"]
 - !private ["s7CVarArgP", "rootViewController"]
 - !private ["s7CVarArgP", "sorted"]
+- !private ["s7CVarArgP", "tabBarItem"]
+- !private ["s7CVarArgP", "tag"]
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["s9CodingKeyP", ""]
 - !private ["s9CodingKeyP", "init"]
@@ -71,10 +80,13 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "compactMap"]
 - !private ["s28CustomDebugStringConvertibleP", "decode"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "tabBarItem"]
+- !private ["s28CustomDebugStringConvertibleP", "tag"]
 - !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "compactMap"]
@@ -85,10 +97,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "compactMap"]
 - !private ["s23CustomStringConvertibleP", "decode"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
 - !private ["s23CustomStringConvertibleP", "sorted"]
+- !private ["s23CustomStringConvertibleP", "tabBarItem"]
+- !private ["s23CustomStringConvertibleP", "tag"]
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
 - ["10Foundation12DataProtocolP", ""]
 - !private ["10Foundation12DataProtocolP", "append"]
@@ -98,22 +113,30 @@ depends-member:
 - !private ["Se", "append"]
 - !private ["Se", "blue"]
 - !private ["Se", "compactMap"]
+- !private ["Se", "controllerName"]
 - !private ["Se", "cyan"]
+- !private ["Se", "image"]
 - ["Se", "init"]
 - !private ["Se", "order"]
 - !private ["Se", "red"]
+- !private ["Se", "selectedImage"]
 - !private ["Se", "sorted"]
-- !private ["Se", "toViewController"]
+- !private ["Se", "storyboardName"]
+- !private ["Se", "title"]
 - !private ["Se", "yellow"]
 - !private ["SE", "append"]
 - !private ["SE", "blue"]
 - !private ["SE", "compactMap"]
+- !private ["SE", "controllerName"]
 - !private ["SE", "cyan"]
+- !private ["SE", "image"]
 - ["SE", "init"]
 - !private ["SE", "order"]
 - !private ["SE", "red"]
+- !private ["SE", "selectedImage"]
 - !private ["SE", "sorted"]
-- !private ["SE", "toViewController"]
+- !private ["SE", "storyboardName"]
+- !private ["SE", "title"]
 - !private ["SE", "yellow"]
 - !private ["SQ", "=="]
 - ["SQ", ""]
@@ -123,11 +146,14 @@ depends-member:
 - ["SQ", "cyan"]
 - !private ["SQ", "decode"]
 - ["SQ", "init"]
+- !private ["SQ", "instantiateViewController"]
 - !private ["SQ", "main"]
 - !private ["SQ", "makeKeyAndVisible"]
 - ["SQ", "red"]
 - !private ["SQ", "rootViewController"]
 - !private ["SQ", "sorted"]
+- !private ["SQ", "tabBarItem"]
+- !private ["SQ", "tag"]
 - !private ["SQ", "viewControllers"]
 - ["SQ", "yellow"]
 - ["s25ExpressibleByArrayLiteralP", ""]
@@ -155,11 +181,14 @@ depends-member:
 - !private ["SH", "hash"]
 - !private ["SH", "hashValue"]
 - ["SH", "init"]
+- !private ["SH", "instantiateViewController"]
 - !private ["SH", "main"]
 - !private ["SH", "makeKeyAndVisible"]
 - ["SH", "red"]
 - !private ["SH", "rootViewController"]
 - !private ["SH", "sorted"]
+- !private ["SH", "tabBarItem"]
+- !private ["SH", "tag"]
 - !private ["SH", "viewControllers"]
 - ["SH", "yellow"]
 - ["s25LosslessStringConvertibleP", ""]
@@ -176,24 +205,64 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "makeKeyAndVisible"]
 - !private ["So8NSCodingP", "rootViewController"]
+- !private ["So8NSCodingP", "tabBarItem"]
+- !private ["So8NSCodingP", "tag"]
 - !private ["So8NSCodingP", "viewControllers"]
 - !private ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "tabBarItem"]
 - !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
 - ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "bundleForClass"]
+- !private ["So8NSObjectC", "bundleWithIdentifier"]
+- !private ["So8NSObjectC", "bundleWithPath"]
+- !private ["So8NSObjectC", "bundleWithURL"]
 - !private ["So8NSObjectC", "decode"]
+- !private ["So8NSObjectC", "imageNamed"]
+- !private ["So8NSObjectC", "imageWithCGImage"]
+- !private ["So8NSObjectC", "imageWithCIImage"]
+- !private ["So8NSObjectC", "imageWithContentsOfFile"]
+- !private ["So8NSObjectC", "imageWithData"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "instantiateViewControllerWithIdentifier"]
+- !private ["So8NSObjectC", "jpegData"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "makeKeyAndVisible"]
+- !private ["So8NSObjectC", "pngData"]
 - !private ["So8NSObjectC", "rootViewController"]
+- !private ["So8NSObjectC", "storyboardWithName"]
+- !private ["So8NSObjectC", "systemImageNamed"]
+- !private ["So8NSObjectC", "tabBarItem"]
+- !private ["So8NSObjectC", "tag"]
 - !private ["So8NSObjectC", "viewControllers"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "bundleForClass"]
+- !private ["So8NSObjectP", "bundleWithIdentifier"]
+- !private ["So8NSObjectP", "bundleWithPath"]
+- !private ["So8NSObjectP", "bundleWithURL"]
 - !private ["So8NSObjectP", "decode"]
+- !private ["So8NSObjectP", "imageNamed"]
+- !private ["So8NSObjectP", "imageWithCGImage"]
+- !private ["So8NSObjectP", "imageWithCIImage"]
+- !private ["So8NSObjectP", "imageWithContentsOfFile"]
+- !private ["So8NSObjectP", "imageWithData"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "instantiateViewController"]
+- !private ["So8NSObjectP", "instantiateViewControllerWithIdentifier"]
+- !private ["So8NSObjectP", "jpegData"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "makeKeyAndVisible"]
+- !private ["So8NSObjectP", "pngData"]
 - !private ["So8NSObjectP", "rootViewController"]
+- !private ["So8NSObjectP", "storyboardWithName"]
+- !private ["So8NSObjectP", "systemImageNamed"]
+- !private ["So8NSObjectP", "tabBarItem"]
+- !private ["So8NSObjectP", "tag"]
 - !private ["So8NSObjectP", "viewControllers"]
+- !private ["So14NSSecureCodingP", "init"]
 - !private ["Sj", ""]
 - ["Sk", ""]
 - !private ["Sk", "append"]
@@ -222,7 +291,10 @@ depends-member:
 - !private ["9TabBarPOC0aB7ManagerC", "Bundle"]
 - ["9TabBarPOC0aB7ManagerC", "Feature"]
 - ["9TabBarPOC0aB7ManagerC", "TabItem"]
+- !private ["9TabBarPOC0aB7ManagerC", "UIImage"]
+- !private ["9TabBarPOC0aB7ManagerC", "UIStoryboard"]
 - !private ["9TabBarPOC0aB7ManagerC", "UITabBarController"]
+- !private ["9TabBarPOC0aB7ManagerC", "UITabBarItem"]
 - ["9TabBarPOC0aB7ManagerC", "UIViewController"]
 - ["9TabBarPOC0aB7ManagerC", "UIWindow"]
 - ["9TabBarPOC0aB7ManagerC", "deinit"]
@@ -232,30 +304,44 @@ depends-member:
 - ["9TabBarPOC0aB7ManagerC", "setupRootViewController"]
 - ["9TabBarPOC0aB7ManagerC", "setupRootViewControllerFromJSON"]
 - ["9TabBarPOC0aB7ManagerC", "tabItems"]
+- ["9TabBarPOC0aB7ManagerC", "toViewController"]
 - ["9TabBarPOC0aB7ManagerC", "window"]
 - !private ["9TabBarPOC0A4ItemV", "CodingKeys"]
 - ["9TabBarPOC0A4ItemV", ""]
 - !private ["9TabBarPOC0A4ItemV", "blue"]
+- !private ["9TabBarPOC0A4ItemV", "controllerName"]
 - !private ["9TabBarPOC0A4ItemV", "cyan"]
+- !private ["9TabBarPOC0A4ItemV", "image"]
 - !private ["9TabBarPOC0A4ItemV", "order"]
 - !private ["9TabBarPOC0A4ItemV", "red"]
-- !private ["9TabBarPOC0A4ItemV", "toViewController"]
+- !private ["9TabBarPOC0A4ItemV", "selectedImage"]
+- !private ["9TabBarPOC0A4ItemV", "storyboardName"]
+- !private ["9TabBarPOC0A4ItemV", "title"]
 - !private ["9TabBarPOC0A4ItemV", "yellow"]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
 - !private ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "makeKeyAndVisible"]
 - !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
+- !private ["So29UIAccessibilityIdentificationP", "tag"]
 - !private ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "makeKeyAndVisible"]
 - !private ["So12UIAppearanceP", "rootViewController"]
+- !private ["So12UIAppearanceP", "tag"]
 - !private ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
+- !private ["So21UIAppearanceContainerP", "tabBarItem"]
 - !private ["So21UIAppearanceContainerP", "viewControllers"]
+- ["So9UIBarItemC", ""]
+- !private ["So9UIBarItemC", "init"]
+- !private ["So9UIBarItemC", "tag"]
 - !private ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "tabBarItem"]
 - !private ["So18UIContentContainerP", "viewControllers"]
 - !private ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "makeKeyAndVisible"]
@@ -267,6 +353,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UIFocusEnvironmentP", "rootViewController"]
+- !private ["So18UIFocusEnvironmentP", "tabBarItem"]
 - !private ["So18UIFocusEnvironmentP", "viewControllers"]
 - !private ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "makeKeyAndVisible"]
@@ -274,6 +361,8 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "makeKeyAndVisible"]
 - !private ["So20UIFocusItemContainerP", "rootViewController"]
+- !private ["So7UIImageC", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So24UILargeContentViewerItemP", ""]
 - !private ["So24UILargeContentViewerItemP", "makeKeyAndVisible"]
 - !private ["So24UILargeContentViewerItemP", "rootViewController"]
@@ -281,39 +370,52 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
 - !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "tabBarItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewControllers"]
 - ["So11UIResponderC", ""]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "makeKeyAndVisible"]
 - !private ["So11UIResponderC", "rootViewController"]
+- !private ["So11UIResponderC", "tabBarItem"]
 - !private ["So11UIResponderC", "viewControllers"]
 - !private ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "makeKeyAndVisible"]
 - !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "tabBarItem"]
 - !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "tag"]
 - !private ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "tabBarItem"]
 - !private ["So16UIStateRestoringP", "viewControllers"]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So18UITabBarControllerC", "init"]
 - !private ["So18UITabBarControllerC", "viewControllers"]
 - !private ["So16UITabBarDelegateP", "init"]
 - !private ["So16UITabBarDelegateP", "viewControllers"]
+- !private ["So12UITabBarItemC", "init"]
+- !private ["So12UITabBarItemC", "tag"]
 - !private ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
+- !private ["So18UITraitEnvironmentP", "tabBarItem"]
 - !private ["So18UITraitEnvironmentP", "viewControllers"]
 - !private ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "makeKeyAndVisible"]
 - !private ["So23UIUserActivityRestoringP", "rootViewController"]
+- !private ["So23UIUserActivityRestoringP", "tabBarItem"]
 - !private ["So23UIUserActivityRestoringP", "viewControllers"]
 - ["So6UIViewC", ""]
 - !private ["So6UIViewC", "makeKeyAndVisible"]
 - !private ["So6UIViewC", "rootViewController"]
 - ["So16UIViewControllerC", ""]
 - !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "tabBarItem"]
 - !private ["So16UIViewControllerC", "viewControllers"]
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
@@ -329,6 +431,7 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "compactMap"]
 - ["s19_HasContiguousBytesP", "init"]
@@ -339,15 +442,21 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "sorted"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "decode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBarItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tag"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "decode"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "instantiateViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeKeyAndVisible"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rootViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tabBarItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tag"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewControllers"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "compactMap"]
@@ -388,8 +497,11 @@ depends-nominal:
 - "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
 - !private "Sj"
 - "Sk"
 - "Sm"
@@ -404,19 +516,25 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
+- "So9UIBarItemC"
 - !private "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So24UILargeContentViewerItemP"
 - !private "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
 - !private "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
 - !private "So18UITabBarControllerC"
 - !private "So16UITabBarDelegateP"
+- !private "So12UITabBarItemC"
 - !private "So18UITraitEnvironmentP"
 - !private "So23UIUserActivityRestoringP"
 - "So6UIViewC"
@@ -428,6 +546,7 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
 - "s19_HasContiguousBytesP"
 - "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
@@ -464,4 +583,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9ccf897cd1206b16cc4b7b4e0d44787a"
+interface-hash: "a7789afa879d7dd632a3eb6db5f4f6dc"
