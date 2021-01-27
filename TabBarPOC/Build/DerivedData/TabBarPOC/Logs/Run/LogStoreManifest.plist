@@ -74,6 +74,40 @@
 			<key>uniqueIdentifier</key>
 			<string>13824DF2-0086-47B7-9B20-8612A792F0DA</string>
 		</dict>
+		<key>17E7A60A-3215-402C-93B2-8106D1B05AA9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>17E7A60A-3215-402C-93B2-8106D1B05AA9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TabBarPOC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TabBarPOC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run TabBarPOC</string>
+			<key>timeStartedRecording</key>
+			<real>633460829.85882497</real>
+			<key>timeStoppedRecording</key>
+			<real>633460849.91551602</real>
+			<key>title</key>
+			<string>Run TabBarPOC</string>
+			<key>uniqueIdentifier</key>
+			<string>17E7A60A-3215-402C-93B2-8106D1B05AA9</string>
+		</dict>
 		<key>2184E67F-395D-4A0D-BED1-379EFF8F7E0E</key>
 		<dict>
 			<key>className</key>
@@ -243,6 +277,40 @@
 			<string>Run TabBarPOC</string>
 			<key>uniqueIdentifier</key>
 			<string>3A2727C6-F109-47CC-A787-B5A10201D98D</string>
+		</dict>
+		<key>3B3251A7-033F-465B-9BF9-8FE0D3D40359</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3B3251A7-033F-465B-9BF9-8FE0D3D40359.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TabBarPOC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TabBarPOC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run TabBarPOC</string>
+			<key>timeStartedRecording</key>
+			<real>633460580.37643099</real>
+			<key>timeStoppedRecording</key>
+			<real>633460829.71361899</real>
+			<key>title</key>
+			<string>Run TabBarPOC</string>
+			<key>uniqueIdentifier</key>
+			<string>3B3251A7-033F-465B-9BF9-8FE0D3D40359</string>
 		</dict>
 		<key>3CCC641F-9D62-4EFD-8962-548A08A4BAF6</key>
 		<dict>
@@ -720,6 +788,40 @@
 			<key>uniqueIdentifier</key>
 			<string>855D0EA0-2341-46D6-B471-3403B27D3EDC</string>
 		</dict>
+		<key>8FC21AF1-F3FF-4A56-81CE-0A40CE4FADCA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8FC21AF1-F3FF-4A56-81CE-0A40CE4FADCA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TabBarPOC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TabBarPOC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run TabBarPOC</string>
+			<key>timeStartedRecording</key>
+			<real>633460547.98877597</real>
+			<key>timeStoppedRecording</key>
+			<real>633460563.50510705</real>
+			<key>title</key>
+			<string>Run TabBarPOC</string>
+			<key>uniqueIdentifier</key>
+			<string>8FC21AF1-F3FF-4A56-81CE-0A40CE4FADCA</string>
+		</dict>
 		<key>90D4BD13-0B9C-4AB5-A8F5-4BEB05D56182</key>
 		<dict>
 			<key>className</key>
@@ -856,6 +958,40 @@
 			<key>uniqueIdentifier</key>
 			<string>A1C924AF-BF8C-4BF4-91CB-9FA3517ACEA4</string>
 		</dict>
+		<key>A36B1619-6475-4C0A-B967-979C312A07D4</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A36B1619-6475-4C0A-B967-979C312A07D4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TabBarPOC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TabBarPOC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run TabBarPOC</string>
+			<key>timeStartedRecording</key>
+			<real>633460563.59032094</real>
+			<key>timeStoppedRecording</key>
+			<real>633460580.28854299</real>
+			<key>title</key>
+			<string>Run TabBarPOC</string>
+			<key>uniqueIdentifier</key>
+			<string>A36B1619-6475-4C0A-B967-979C312A07D4</string>
+		</dict>
 		<key>B04CBA67-9B89-49A2-99A7-53EBE3DF9A0E</key>
 		<dict>
 			<key>className</key>
@@ -958,6 +1094,40 @@
 			<key>uniqueIdentifier</key>
 			<string>BB43615E-E4C5-4CA9-BEBD-F195CBECC6B7</string>
 		</dict>
+		<key>D6E1DDFD-FAEB-4668-899F-4A66E12A32A6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D6E1DDFD-FAEB-4668-899F-4A66E12A32A6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TabBarPOC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TabBarPOC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run TabBarPOC</string>
+			<key>timeStartedRecording</key>
+			<real>633460434.59881699</real>
+			<key>timeStoppedRecording</key>
+			<real>633460547.81595898</real>
+			<key>title</key>
+			<string>Run TabBarPOC</string>
+			<key>uniqueIdentifier</key>
+			<string>D6E1DDFD-FAEB-4668-899F-4A66E12A32A6</string>
+		</dict>
 		<key>DF98CD08-C811-4C0C-9291-5BB9DE77D52F</key>
 		<dict>
 			<key>className</key>
@@ -991,6 +1161,40 @@
 			<string>Run TabBarPOC</string>
 			<key>uniqueIdentifier</key>
 			<string>DF98CD08-C811-4C0C-9291-5BB9DE77D52F</string>
+		</dict>
+		<key>FE66A7DA-DE63-4977-92FB-6E0915D46BD2</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FE66A7DA-DE63-4977-92FB-6E0915D46BD2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TabBarPOC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TabBarPOC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run TabBarPOC</string>
+			<key>timeStartedRecording</key>
+			<real>633396912.77721202</real>
+			<key>timeStoppedRecording</key>
+			<real>633460434.46862602</real>
+			<key>title</key>
+			<string>Run TabBarPOC</string>
+			<key>uniqueIdentifier</key>
+			<string>FE66A7DA-DE63-4977-92FB-6E0915D46BD2</string>
 		</dict>
 		<key>FE98018B-D12E-46F8-A00E-27470A0C9C1B</key>
 		<dict>

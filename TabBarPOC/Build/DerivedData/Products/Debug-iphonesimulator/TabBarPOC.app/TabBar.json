@@ -30,6 +30,15 @@
             "selectedImage": "leaf.fill",
             "order": 3,
             "title": "Cyan"
+        },
+        {
+            "storyboardName": "Main",
+            "controllerName": "cyan",
+            "image": "leaf.fill",
+            "selectedImage": "leaf.fill",
+            "order": 3,
+            "title": "Cyan"
         }
+        
     ]
     
